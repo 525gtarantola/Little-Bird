@@ -1,21 +1,13 @@
 body {
-  background-color: rgb(172, 127, 90);
+  background-color: rgba(172, 127, 90, 0.706);
   align-items: center;
 }
 
 
-.title {
-  font-family: "Sugar & Spice", sans-serif;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 3%;
-  margin-bottom: 0%;
-}
 @font-face {
   font-family: "Sugar & Spice";
   src: url("/font/Sugar & Spice demo.ttf") format("truetype");
 }
-
 
 h1 {
   font-size: 12rem;
@@ -23,20 +15,17 @@ h1 {
   text-shadow: 2px 2px 2px rgb(122, 107, 84);
 }
 
-
 .caption {
   margin-top: 0%;
   margin-bottom: 2%;
   text-align: center;
 }
 
-
 p {
   font-size: 150%;
   color: white;
   text-shadow: 2px 2px 2px rgb(122, 107, 84);
 }
-
 
 .hero {
   position: relative;
@@ -45,7 +34,6 @@ p {
   background-size: cover;
   background-position: center;
 }
-
 
 .overlay {
   position: absolute;
@@ -57,11 +45,10 @@ p {
   text-align: center;
 }
 
-
 .button {
   display: inline-block;
   padding: 30px 60px;
-  background-color: rgb(153, 133, 118, 0.5);
+  background-color: rgba(153, 133, 118, 0.5); /* Updated opacity */
   color: rgb(255, 255, 255);
   text-decoration: none;
   position: relative;
@@ -72,11 +59,9 @@ p {
   border: 1px solid rgb(255, 255, 255);
 }
 
-
 .button:hover {
-  background-color: rgb(153, 133, 118, 0.5);
+  background-color: rgba(153, 133, 118, 0.5); /* Updated opacity */
 }
-
 
 .button:after,
 .button:before {
@@ -86,7 +71,6 @@ p {
   border: 0px solid transparent;
   transition: all 0.3s ease;
 }
-
 
 .button:after {
   width: 100%;
@@ -98,7 +82,6 @@ p {
   transform: scaleY(0);
 }
 
-
 .button:before {
   width: 100%;
   height: 100%;
@@ -109,12 +92,10 @@ p {
   transform: scaleX(0);
 }
 
-
 .button:hover::before,
 .button:hover::after {
   transform: scaleX(1) scaleY(1);
 }
-
 
 /* About Us */
 .about-us {
@@ -125,18 +106,12 @@ p {
 }
 /* About Us End */
 
-
-
-
-
-
 .footer-basic {
   padding:40px 0;
   background-color:#ffffff;
   color:#4b4c4d;
   margin-top: 3%;
 }
-
 
 .footer-basic ul {
   padding:0;
@@ -147,11 +122,9 @@ p {
   margin-bottom:0;
 }
 
-
 .footer-basic li {
   padding:0 10px;
 }
-
 
 .footer-basic ul a {
   color:inherit;
@@ -159,17 +132,14 @@ p {
   opacity:0.8;
 }
 
-
 .footer-basic ul a:hover {
   opacity:1;
 }
-
 
 .footer-basic .social {
   text-align:center;
   padding-bottom:25px;
 }
-
 
 .footer-basic .social > a {
   font-size:24px;
@@ -185,11 +155,9 @@ p {
   opacity:0.75;
 }
 
-
 .footer-basic .social > a:hover {
   opacity:0.9;
 }
-
 
 .footer-basic .copyright {
   margin-top:15px;
@@ -199,3 +167,29 @@ p {
   margin-bottom:0;
 }
 
+.title {
+  font-family: "Sugar & Spice", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 0%;
+  position: relative; /* Ensure relative positioning for stacking */
+}
+
+.image1 {
+  position: absolute; /* Position the image absolutely */
+  top: 0; /* Align the top of the image with the top of the title */
+  left: 50%; /* Position horizontally in the center */
+  transform: translateX(-50%); /* Adjust horizontally to center */
+}
+
+.title h1 {
+  font-size: 12rem;
+  color: white;
+  text-shadow: 2px 2px 2px rgb(122, 107, 84);
+}
+
+.image1 img {
+  width: 100px; /* Set the width of the image */
+  height: auto; /* Maintain aspect ratio */
+}
