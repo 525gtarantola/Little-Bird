@@ -12,13 +12,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Custom CSS for navbar brand image size */
+    .navbar-brand img {
+      width: 100px; 
+      height: auto;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="imgs/LBTCo BW bird logo ORANGE.png" alt="Little Bird Toy Company Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
   <div class="head">
     <div class="row">
-      <div class="image1">
-        <img src="imgs/LBTCo BW bird logo ORANGE.png" alt="Image Description">
-      </div>
       <div class="title"><h1>Little Bird</h1></div>
       <div class="caption"><p>HANDMADE TOYS</p></div>
     </div>
@@ -36,7 +67,7 @@
   <!-- Hero End -->
 
   <!-- About Us -->
-  <div class="row about-us">
+  <div id="about-us" class="row about-us">
     <div class="title"><h1>About Us</h1></div>
     <div class="caption">
       <p>Introducing The Little Bird Toy Company, where imagination takes flight! Nestled in the heart of a quaint small town, our family-owned business, led by siblings Evan, Abigail, and Elizabeth, has been crafting enchanting wooden toys for children for over three years. With a steadfast commitment to quality craftsmanship and nurturing young minds, we've cultivated a devoted local following.</p>
@@ -89,9 +120,9 @@
         <a href="#"><i class="icon ion-social-facebook"></i></a>
       </div>
       <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Home</a></li>
+        <li class="list-inline-item"><a href="index.html">Home</a></li>
         <li class="list-inline-item"><a href="#">Services</a></li>
-        <li class="list-inline-item"><a href="#">About</a></li>
+        <li class="list-inline-item"><a href="#about-us">About</a></li>
         <li class="list-inline-item"><a href="#">Terms</a></li>
         <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
       </ul>
@@ -101,10 +132,7 @@
   <!-- Footer End -->
 
   <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-  <!-- Bootstrap JavaScript Libraries End -->
-
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   <script src="script.js"></script>

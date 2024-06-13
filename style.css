@@ -272,3 +272,7 @@ p {
 h3 {
   font-family: "Raleway", sans-serif;
 }
+
+.navbar-brand {
+  size: 10px;
+}
