@@ -46,6 +46,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+          <!-- Cart Icon and Badge -->
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="cart-icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cart-badge" class="badge bg-primary">0</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -168,10 +174,10 @@
   <div class="footer-basic">
     <footer>
       <div class="social">
-        <a href="#"><i class="icon ion-social-instagram"></i></a>
-        <a href="#"><i class="icon ion-social-snapchat"></i></a>
-        <a href="#"><i class="icon ion-social-twitter"></i></a>
-        <a href="#"><i class="icon ion-social-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a>
+        <a href="https://www.snapchat.com/"><i class="icon ion-social-snapchat"></i></a>
+        <a href="https://x.com/"><i class="icon ion-social-twitter"></i></a>
+        <a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a>
       </div>
       <ul class="list-inline">
         <li class="list-inline-item"><a href="#">Home</a></li>
@@ -184,6 +190,28 @@
     </footer>
   </div>
   <!-- Footer End -->
+
+  <!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="cart-list" class="list-group">
+          <!-- Cart items will be dynamically added here -->
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Cart Modal -->
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
